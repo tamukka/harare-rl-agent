@@ -1,0 +1,16 @@
+stable-baselines3
+gym
+numpy
+pandas
+matplotlib
+fastapi
+uvicorn
+mlflow
+dvc
+osmnx
+shapely
+geopandas
+rasterio
+requests
+torch
+torchvision
