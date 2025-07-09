@@ -1,0 +1,36 @@
+{
+  "session_summary": {
+    "total_episodes": 1,
+    "total_steps": 1,
+    "avg_reward": -10.0,
+    "success_rate": 0.0,
+    "best_episode": {
+      "episode_id": 0,
+      "total_steps": 1,
+      "total_reward": -10,
+      "avg_reward": -10.0,
+      "success": false,
+      "avg_confidence": 0.2775040864944458,
+      "exploration_score": 1.0,
+      "completion_time": 0.0017018318176269531,
+      "timestamp": "2025-07-07 20:15:28.703648"
+    },
+    "avg_steps_per_episode": 1.0,
+    "avg_confidence": 0.2775040864944458,
+    "avg_exploration_score": 1.0,
+    "total_session_time": 0.0017018318176269531
+  },
+  "episode_history": [
+    {
+      "episode_id": 0,
+      "total_steps": 1,
+      "total_reward": -10,
+      "avg_reward": -10.0,
+      "success": false,
+      "avg_confidence": 0.2775040864944458,
+      "exploration_score": 1.0,
+      "completion_time": 0.0017018318176269531,
+      "timestamp": "2025-07-07 20:15:28.703648"
+    }
+  ]
+}

@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_32572971bc5eb38fd4c5694c6e83eb25 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_32572971bc5eb38fd4c5694c6e83eb25" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_32572971bc5eb38fd4c5694c6e83eb25 = L.map(
+                "map_32572971bc5eb38fd4c5694c6e83eb25",
+                {
+                    center: [-17.8292, 31.0522],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d6b7ba902596677f21f6e6bf5f2862d6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d6b7ba902596677f21f6e6bf5f2862d6.addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+            var poly_line_992524b09efae69e7450165e50eda0cb = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.0}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_4c8f947ebc34c491dbeaa93e33769e5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a62870442d7b4ed518aefcf545cdf466 = $(`<div id="html_a62870442d7b4ed518aefcf545cdf466" style="width: 100.0%; height: 100.0%;">Step 1: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_4c8f947ebc34c491dbeaa93e33769e5c.setContent(html_a62870442d7b4ed518aefcf545cdf466);
+            
+        
+
+        poly_line_992524b09efae69e7450165e50eda0cb.bindPopup(popup_4c8f947ebc34c491dbeaa93e33769e5c)
+        ;
+
+        
+    
+    
+            var poly_line_20c4d1588bcaaa87bd27743a33003aff = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.06}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_a29d156bfe6458dd5148d2c26e36a13d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21efb719482cef41188eaba77340c286 = $(`<div id="html_21efb719482cef41188eaba77340c286" style="width: 100.0%; height: 100.0%;">Step 2: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_a29d156bfe6458dd5148d2c26e36a13d.setContent(html_21efb719482cef41188eaba77340c286);
+            
+        
+
+        poly_line_20c4d1588bcaaa87bd27743a33003aff.bindPopup(popup_a29d156bfe6458dd5148d2c26e36a13d)
+        ;
+
+        
+    
+    
+            var poly_line_6a4672e25f388b454766e5807d8584ab = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.12}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_d595715b7287e92157065be247d21dde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c5f58d3124c3006df082909584c1376 = $(`<div id="html_9c5f58d3124c3006df082909584c1376" style="width: 100.0%; height: 100.0%;">Step 3: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_d595715b7287e92157065be247d21dde.setContent(html_9c5f58d3124c3006df082909584c1376);
+            
+        
+
+        poly_line_6a4672e25f388b454766e5807d8584ab.bindPopup(popup_d595715b7287e92157065be247d21dde)
+        ;
+
+        
+    
+    
+            var poly_line_4ef4e33ffe3e5b265e661ff2f64efe77 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.18}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_decf63926a55fe806dea61bdac0febd0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_560714356d5362526ec61f618ba7be5c = $(`<div id="html_560714356d5362526ec61f618ba7be5c" style="width: 100.0%; height: 100.0%;">Step 4: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_decf63926a55fe806dea61bdac0febd0.setContent(html_560714356d5362526ec61f618ba7be5c);
+            
+        
+
+        poly_line_4ef4e33ffe3e5b265e661ff2f64efe77.bindPopup(popup_decf63926a55fe806dea61bdac0febd0)
+        ;
+
+        
+    
+    
+            var poly_line_801245de56b0da244d09713165bbe26e = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.24}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_959b52a7bb3e755b996e1ea08021e377 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f67919d1663e695e680a7dc642a40d66 = $(`<div id="html_f67919d1663e695e680a7dc642a40d66" style="width: 100.0%; height: 100.0%;">Step 5: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_959b52a7bb3e755b996e1ea08021e377.setContent(html_f67919d1663e695e680a7dc642a40d66);
+            
+        
+
+        poly_line_801245de56b0da244d09713165bbe26e.bindPopup(popup_959b52a7bb3e755b996e1ea08021e377)
+        ;
+
+        
+    
+    
+            var poly_line_1d1e680dcb7539eaa3c48bf28681a0a8 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.3}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_0a2f3387b4c26ff41ee8e766cd1f2c52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f507b194f281c88ceb09982a885ffc2c = $(`<div id="html_f507b194f281c88ceb09982a885ffc2c" style="width: 100.0%; height: 100.0%;">Step 6: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_0a2f3387b4c26ff41ee8e766cd1f2c52.setContent(html_f507b194f281c88ceb09982a885ffc2c);
+            
+        
+
+        poly_line_1d1e680dcb7539eaa3c48bf28681a0a8.bindPopup(popup_0a2f3387b4c26ff41ee8e766cd1f2c52)
+        ;
+
+        
+    
+    
+            var poly_line_45a7f17836b304eb4ac6c68d1bbbef84 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.36}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_b80f9cb2671bbc46964ce08c7850bb47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d5242a9752647d700083213e1702546 = $(`<div id="html_6d5242a9752647d700083213e1702546" style="width: 100.0%; height: 100.0%;">Step 7: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_b80f9cb2671bbc46964ce08c7850bb47.setContent(html_6d5242a9752647d700083213e1702546);
+            
+        
+
+        poly_line_45a7f17836b304eb4ac6c68d1bbbef84.bindPopup(popup_b80f9cb2671bbc46964ce08c7850bb47)
+        ;
+
+        
+    
+    
+            var poly_line_d79e55ab0dbfd8a412ce5ac1ffc985b2 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.42}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_d01d7573db949ef99ee7d4302bb53c2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55ca649662a20e0628b1ceebbb44e3c2 = $(`<div id="html_55ca649662a20e0628b1ceebbb44e3c2" style="width: 100.0%; height: 100.0%;">Step 8: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_d01d7573db949ef99ee7d4302bb53c2c.setContent(html_55ca649662a20e0628b1ceebbb44e3c2);
+            
+        
+
+        poly_line_d79e55ab0dbfd8a412ce5ac1ffc985b2.bindPopup(popup_d01d7573db949ef99ee7d4302bb53c2c)
+        ;
+
+        
+    
+    
+            var poly_line_6ae4b45ca8464fe13f66ea073a1fe11a = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.48}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_73e0095c7947ab4de67e65ca8f8f9a07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81cf12137fdb706cb03c73f073bcb98e = $(`<div id="html_81cf12137fdb706cb03c73f073bcb98e" style="width: 100.0%; height: 100.0%;">Step 9: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_73e0095c7947ab4de67e65ca8f8f9a07.setContent(html_81cf12137fdb706cb03c73f073bcb98e);
+            
+        
+
+        poly_line_6ae4b45ca8464fe13f66ea073a1fe11a.bindPopup(popup_73e0095c7947ab4de67e65ca8f8f9a07)
+        ;
+
+        
+    
+    
+            var poly_line_fe3d755046a9ef9387d0c14cf1276c46 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.54}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_4042cec5877ceb0222c14fa70aad724c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5971ce0c40b1d79100f3d5ca5343b048 = $(`<div id="html_5971ce0c40b1d79100f3d5ca5343b048" style="width: 100.0%; height: 100.0%;">Step 10: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_4042cec5877ceb0222c14fa70aad724c.setContent(html_5971ce0c40b1d79100f3d5ca5343b048);
+            
+        
+
+        poly_line_fe3d755046a9ef9387d0c14cf1276c46.bindPopup(popup_4042cec5877ceb0222c14fa70aad724c)
+        ;
+
+        
+    
+    
+            var poly_line_12c2d27dba7e89eb1a3ae6d717481e99 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.6}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_b884eb4d26f2581b97286c09221f8b31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42105dc0e56239c3e797a39e6bdc90d4 = $(`<div id="html_42105dc0e56239c3e797a39e6bdc90d4" style="width: 100.0%; height: 100.0%;">Step 11: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_b884eb4d26f2581b97286c09221f8b31.setContent(html_42105dc0e56239c3e797a39e6bdc90d4);
+            
+        
+
+        poly_line_12c2d27dba7e89eb1a3ae6d717481e99.bindPopup(popup_b884eb4d26f2581b97286c09221f8b31)
+        ;
+
+        
+    
+    
+            var poly_line_61ab3386e9e2863eb9633d1a47baad1c = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.66}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_8f8d9bc6eabd996dcdd79ac3d2ea2562 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_346a62c9e43a2390afdb297f2d13395c = $(`<div id="html_346a62c9e43a2390afdb297f2d13395c" style="width: 100.0%; height: 100.0%;">Step 12: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_8f8d9bc6eabd996dcdd79ac3d2ea2562.setContent(html_346a62c9e43a2390afdb297f2d13395c);
+            
+        
+
+        poly_line_61ab3386e9e2863eb9633d1a47baad1c.bindPopup(popup_8f8d9bc6eabd996dcdd79ac3d2ea2562)
+        ;
+
+        
+    
+    
+            var poly_line_e9c3eff5037888d41f0eeb49c6f80ade = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.7199999999999998}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_6793248216254bef077b4291a42d34fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_089dec7a76e0e69ad292328731652a25 = $(`<div id="html_089dec7a76e0e69ad292328731652a25" style="width: 100.0%; height: 100.0%;">Step 13: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_6793248216254bef077b4291a42d34fb.setContent(html_089dec7a76e0e69ad292328731652a25);
+            
+        
+
+        poly_line_e9c3eff5037888d41f0eeb49c6f80ade.bindPopup(popup_6793248216254bef077b4291a42d34fb)
+        ;
+
+        
+    
+    
+            var poly_line_c16c350b539a4577b1a47b3f63ab5d2f = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.7800000000000002}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_ac6df00791c930bf4aec5c128b4fdb08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b145596b1d16724b8fbeabe4ca0bfdaf = $(`<div id="html_b145596b1d16724b8fbeabe4ca0bfdaf" style="width: 100.0%; height: 100.0%;">Step 14: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_ac6df00791c930bf4aec5c128b4fdb08.setContent(html_b145596b1d16724b8fbeabe4ca0bfdaf);
+            
+        
+
+        poly_line_c16c350b539a4577b1a47b3f63ab5d2f.bindPopup(popup_ac6df00791c930bf4aec5c128b4fdb08)
+        ;
+
+        
+    
+    
+            var poly_line_6a37f4f048544b68855117753f938fbe = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.84}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_435da8a13ea5a71215f10fb075e5cd00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b666b44afa63435a283403d608c7c9f2 = $(`<div id="html_b666b44afa63435a283403d608c7c9f2" style="width: 100.0%; height: 100.0%;">Step 15: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_435da8a13ea5a71215f10fb075e5cd00.setContent(html_b666b44afa63435a283403d608c7c9f2);
+            
+        
+
+        poly_line_6a37f4f048544b68855117753f938fbe.bindPopup(popup_435da8a13ea5a71215f10fb075e5cd00)
+        ;
+
+        
+    
+    
+            var poly_line_e08e1ee821b75eb99fb4d6f408ee624d = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.9}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_584f55147a139b14b37ffa3fa65e59d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68d6af58182e90f05cb71007ecd5f683 = $(`<div id="html_68d6af58182e90f05cb71007ecd5f683" style="width: 100.0%; height: 100.0%;">Step 16: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_584f55147a139b14b37ffa3fa65e59d4.setContent(html_68d6af58182e90f05cb71007ecd5f683);
+            
+        
+
+        poly_line_e08e1ee821b75eb99fb4d6f408ee624d.bindPopup(popup_584f55147a139b14b37ffa3fa65e59d4)
+        ;
+
+        
+    
+    
+            var poly_line_f01749aebd2163956072233c0d2c9c8a = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.96}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_6ea8622a70acf166bece840f9e053f7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d28162363b3303b941e746009f9b35f = $(`<div id="html_4d28162363b3303b941e746009f9b35f" style="width: 100.0%; height: 100.0%;">Step 17: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_6ea8622a70acf166bece840f9e053f7e.setContent(html_4d28162363b3303b941e746009f9b35f);
+            
+        
+
+        poly_line_f01749aebd2163956072233c0d2c9c8a.bindPopup(popup_6ea8622a70acf166bece840f9e053f7e)
+        ;
+
+        
+    
+    
+            var poly_line_4aa4b088713569311d98daacfd82c0c5 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.02}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_99ac2c26b3aa85a3f9fc9dd53e792d3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec0ff7f3fb1569d32d6eb3ab0ede27ae = $(`<div id="html_ec0ff7f3fb1569d32d6eb3ab0ede27ae" style="width: 100.0%; height: 100.0%;">Step 18: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_99ac2c26b3aa85a3f9fc9dd53e792d3f.setContent(html_ec0ff7f3fb1569d32d6eb3ab0ede27ae);
+            
+        
+
+        poly_line_4aa4b088713569311d98daacfd82c0c5.bindPopup(popup_99ac2c26b3aa85a3f9fc9dd53e792d3f)
+        ;
+
+        
+    
+    
+            var poly_line_266016f19d463e5fcf1b86b9427112c7 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.08}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_4439428a904470af738b2786b109db97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f20a811a1a8652d055eaabfa67166ec = $(`<div id="html_6f20a811a1a8652d055eaabfa67166ec" style="width: 100.0%; height: 100.0%;">Step 19: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_4439428a904470af738b2786b109db97.setContent(html_6f20a811a1a8652d055eaabfa67166ec);
+            
+        
+
+        poly_line_266016f19d463e5fcf1b86b9427112c7.bindPopup(popup_4439428a904470af738b2786b109db97)
+        ;
+
+        
+    
+    
+            var poly_line_47cef32d11fab0d8b4d5cadaafd29b0b = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.140000000000001}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_32830a7a0a8fee7b99ea02e16119743a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_840db27830939e65e5cbfee0575a8241 = $(`<div id="html_840db27830939e65e5cbfee0575a8241" style="width: 100.0%; height: 100.0%;">Step 20: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_32830a7a0a8fee7b99ea02e16119743a.setContent(html_840db27830939e65e5cbfee0575a8241);
+            
+        
+
+        poly_line_47cef32d11fab0d8b4d5cadaafd29b0b.bindPopup(popup_32830a7a0a8fee7b99ea02e16119743a)
+        ;
+
+        
+    
+    
+            var poly_line_ec3ad29ca8df2ef13a046ef591a63288 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.2}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_fe2f9aefb1cd7fd051d0be3bba446996 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9aa07b1c913a55e57defa0b27c9b4c4 = $(`<div id="html_d9aa07b1c913a55e57defa0b27c9b4c4" style="width: 100.0%; height: 100.0%;">Step 21: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_fe2f9aefb1cd7fd051d0be3bba446996.setContent(html_d9aa07b1c913a55e57defa0b27c9b4c4);
+            
+        
+
+        poly_line_ec3ad29ca8df2ef13a046ef591a63288.bindPopup(popup_fe2f9aefb1cd7fd051d0be3bba446996)
+        ;
+
+        
+    
+    
+            var poly_line_904e10ea26906ff7412c1481d81cdca8 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.26}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_39aaed194af1e74a9092f89d14d60e04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67aa731d1412f33e088936a2f23df0f4 = $(`<div id="html_67aa731d1412f33e088936a2f23df0f4" style="width: 100.0%; height: 100.0%;">Step 22: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_39aaed194af1e74a9092f89d14d60e04.setContent(html_67aa731d1412f33e088936a2f23df0f4);
+            
+        
+
+        poly_line_904e10ea26906ff7412c1481d81cdca8.bindPopup(popup_39aaed194af1e74a9092f89d14d60e04)
+        ;
+
+        
+    
+    
+            var poly_line_bc31b4fb7447c9290f29a78953bf95c0 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.32}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_c9de9f9cd492638f626c7efa83a9bed0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f3f1ee5b8016fc4b3aedee81a907d21 = $(`<div id="html_5f3f1ee5b8016fc4b3aedee81a907d21" style="width: 100.0%; height: 100.0%;">Step 23: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_c9de9f9cd492638f626c7efa83a9bed0.setContent(html_5f3f1ee5b8016fc4b3aedee81a907d21);
+            
+        
+
+        poly_line_bc31b4fb7447c9290f29a78953bf95c0.bindPopup(popup_c9de9f9cd492638f626c7efa83a9bed0)
+        ;
+
+        
+    
+    
+            var poly_line_b012ef2184744f5b741ff6f856d48f08 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.38}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_5927bb3e98beae2c3f8d6408488cea5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3978041d30dd6fa79c80b834e2baaf6 = $(`<div id="html_c3978041d30dd6fa79c80b834e2baaf6" style="width: 100.0%; height: 100.0%;">Step 24: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_5927bb3e98beae2c3f8d6408488cea5b.setContent(html_c3978041d30dd6fa79c80b834e2baaf6);
+            
+        
+
+        poly_line_b012ef2184744f5b741ff6f856d48f08.bindPopup(popup_5927bb3e98beae2c3f8d6408488cea5b)
+        ;
+
+        
+    
+    
+            var poly_line_ec0bb341792e0940534ec57f85a795fc = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.4399999999999995}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_a250e2f364428926f16234d6be2db68e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_330e55c97c3990aa04a7459b940235d6 = $(`<div id="html_330e55c97c3990aa04a7459b940235d6" style="width: 100.0%; height: 100.0%;">Step 25: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_a250e2f364428926f16234d6be2db68e.setContent(html_330e55c97c3990aa04a7459b940235d6);
+            
+        
+
+        poly_line_ec0bb341792e0940534ec57f85a795fc.bindPopup(popup_a250e2f364428926f16234d6be2db68e)
+        ;
+
+        
+    
+    
+            var poly_line_39fe18dfee6cd888410e3c57245a92bb = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_504e58dc4eec359ec27f60b1730d3427 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56c554bbe31e43b9bd5fbd1a261a88b8 = $(`<div id="html_56c554bbe31e43b9bd5fbd1a261a88b8" style="width: 100.0%; height: 100.0%;">Step 26: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_504e58dc4eec359ec27f60b1730d3427.setContent(html_56c554bbe31e43b9bd5fbd1a261a88b8);
+            
+        
+
+        poly_line_39fe18dfee6cd888410e3c57245a92bb.bindPopup(popup_504e58dc4eec359ec27f60b1730d3427)
+        ;
+
+        
+    
+    
+            var poly_line_d2ea32c592d5793727544f1cbb591b7d = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5600000000000005}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_da1baa5c64cffdcc53a7cf459f45a9fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5fbe7a251ce03f2d099e1ea3d91d4e1 = $(`<div id="html_e5fbe7a251ce03f2d099e1ea3d91d4e1" style="width: 100.0%; height: 100.0%;">Step 27: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_da1baa5c64cffdcc53a7cf459f45a9fd.setContent(html_e5fbe7a251ce03f2d099e1ea3d91d4e1);
+            
+        
+
+        poly_line_d2ea32c592d5793727544f1cbb591b7d.bindPopup(popup_da1baa5c64cffdcc53a7cf459f45a9fd)
+        ;
+
+        
+    
+    
+            var poly_line_1f4795e00c095f19d1b85483f1e6e8f6 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.62}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_b5f51240b6aa24367d15f454aa441c6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e949014e818dac0e1c7e689c5040e63 = $(`<div id="html_8e949014e818dac0e1c7e689c5040e63" style="width: 100.0%; height: 100.0%;">Step 28: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_b5f51240b6aa24367d15f454aa441c6a.setContent(html_8e949014e818dac0e1c7e689c5040e63);
+            
+        
+
+        poly_line_1f4795e00c095f19d1b85483f1e6e8f6.bindPopup(popup_b5f51240b6aa24367d15f454aa441c6a)
+        ;
+
+        
+    
+    
+            var poly_line_5d19987a3a23eb973a64c6f2c98011e9 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.68}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_eeb6e029e9c5057204fc6db8ec1d4bab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2fa415901a51ececc47630732536240 = $(`<div id="html_a2fa415901a51ececc47630732536240" style="width: 100.0%; height: 100.0%;">Step 29: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_eeb6e029e9c5057204fc6db8ec1d4bab.setContent(html_a2fa415901a51ececc47630732536240);
+            
+        
+
+        poly_line_5d19987a3a23eb973a64c6f2c98011e9.bindPopup(popup_eeb6e029e9c5057204fc6db8ec1d4bab)
+        ;
+
+        
+    
+    
+            var poly_line_288c2aad649708212d28379baa6baf42 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.74}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_ed8bef6e2d67b09e0a14263aa8ab0dff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7f3b4d51e053a455ccbe392b290281c = $(`<div id="html_d7f3b4d51e053a455ccbe392b290281c" style="width: 100.0%; height: 100.0%;">Step 30: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_ed8bef6e2d67b09e0a14263aa8ab0dff.setContent(html_d7f3b4d51e053a455ccbe392b290281c);
+            
+        
+
+        poly_line_288c2aad649708212d28379baa6baf42.bindPopup(popup_ed8bef6e2d67b09e0a14263aa8ab0dff)
+        ;
+
+        
+    
+    
+            var poly_line_240c9c14f98198d6d8eaf7ee7487dcdd = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.8}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_f56dfa048bb577c6a6f3cb33cd0380b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3816f922180ae2b660692e47f63ffcaa = $(`<div id="html_3816f922180ae2b660692e47f63ffcaa" style="width: 100.0%; height: 100.0%;">Step 31: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_f56dfa048bb577c6a6f3cb33cd0380b0.setContent(html_3816f922180ae2b660692e47f63ffcaa);
+            
+        
+
+        poly_line_240c9c14f98198d6d8eaf7ee7487dcdd.bindPopup(popup_f56dfa048bb577c6a6f3cb33cd0380b0)
+        ;
+
+        
+    
+    
+            var poly_line_bf7c6920d84ddd40c70e0b214d82cbb5 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.859999999999999}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_e55595baf75e079e42ee2361cebe1135 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf4d32bd8a3089e1cd86ffe1c23f6a10 = $(`<div id="html_cf4d32bd8a3089e1cd86ffe1c23f6a10" style="width: 100.0%; height: 100.0%;">Step 32: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_e55595baf75e079e42ee2361cebe1135.setContent(html_cf4d32bd8a3089e1cd86ffe1c23f6a10);
+            
+        
+
+        poly_line_bf7c6920d84ddd40c70e0b214d82cbb5.bindPopup(popup_e55595baf75e079e42ee2361cebe1135)
+        ;
+
+        
+    
+    
+            var poly_line_e0262cad03be78f67311f56c1f2af3cc = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.92}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_4194395095acff791ef1f94883fd4bb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_659248bff39b7952e3dc2c5465bff163 = $(`<div id="html_659248bff39b7952e3dc2c5465bff163" style="width: 100.0%; height: 100.0%;">Step 33: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_4194395095acff791ef1f94883fd4bb9.setContent(html_659248bff39b7952e3dc2c5465bff163);
+            
+        
+
+        poly_line_e0262cad03be78f67311f56c1f2af3cc.bindPopup(popup_4194395095acff791ef1f94883fd4bb9)
+        ;
+
+        
+    
+    
+            var poly_line_ac2312a351a6e4f3a8c2d8fa44093212 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.98}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_4d1ff5131bf5d2d99a62913e0d555ea9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44f96f399230336d7c0f9a25b9c6fd1d = $(`<div id="html_44f96f399230336d7c0f9a25b9c6fd1d" style="width: 100.0%; height: 100.0%;">Step 34: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_4d1ff5131bf5d2d99a62913e0d555ea9.setContent(html_44f96f399230336d7c0f9a25b9c6fd1d);
+            
+        
+
+        poly_line_ac2312a351a6e4f3a8c2d8fa44093212.bindPopup(popup_4d1ff5131bf5d2d99a62913e0d555ea9)
+        ;
+
+        
+    
+    
+            var poly_line_fb64826bc65b01b150d598bc1d67afed = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.04}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_3aa56b24a1b42eb8eecce65a4f836f7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8118e6f6bbe534af4e5313c2db70df0d = $(`<div id="html_8118e6f6bbe534af4e5313c2db70df0d" style="width: 100.0%; height: 100.0%;">Step 35: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_3aa56b24a1b42eb8eecce65a4f836f7f.setContent(html_8118e6f6bbe534af4e5313c2db70df0d);
+            
+        
+
+        poly_line_fb64826bc65b01b150d598bc1d67afed.bindPopup(popup_3aa56b24a1b42eb8eecce65a4f836f7f)
+        ;
+
+        
+    
+    
+            var poly_line_7f01c935e4c8d6eadd82fc4110492763 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.1}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_39482965e78a46ed7ad66edfb81219e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8bed6516484e9d1c39c3017d8f0e5f2 = $(`<div id="html_d8bed6516484e9d1c39c3017d8f0e5f2" style="width: 100.0%; height: 100.0%;">Step 36: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_39482965e78a46ed7ad66edfb81219e6.setContent(html_d8bed6516484e9d1c39c3017d8f0e5f2);
+            
+        
+
+        poly_line_7f01c935e4c8d6eadd82fc4110492763.bindPopup(popup_39482965e78a46ed7ad66edfb81219e6)
+        ;
+
+        
+    
+    
+            var poly_line_4cd48416e604260fca2658cef6da585f = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.16}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_ee5c4ac8b1736dfc4ab9f08010296f32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f81e1fa529a3fe31d7cad6fb5923bf41 = $(`<div id="html_f81e1fa529a3fe31d7cad6fb5923bf41" style="width: 100.0%; height: 100.0%;">Step 37: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_ee5c4ac8b1736dfc4ab9f08010296f32.setContent(html_f81e1fa529a3fe31d7cad6fb5923bf41);
+            
+        
+
+        poly_line_4cd48416e604260fca2658cef6da585f.bindPopup(popup_ee5c4ac8b1736dfc4ab9f08010296f32)
+        ;
+
+        
+    
+    
+            var poly_line_fdebdf5417f08ef2f5a61f0e4df32890 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.22}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_555235ba93100f5774906607ac3a379c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c07361733beae8967fcb414bdf1ae37 = $(`<div id="html_2c07361733beae8967fcb414bdf1ae37" style="width: 100.0%; height: 100.0%;">Step 38: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_555235ba93100f5774906607ac3a379c.setContent(html_2c07361733beae8967fcb414bdf1ae37);
+            
+        
+
+        poly_line_fdebdf5417f08ef2f5a61f0e4df32890.bindPopup(popup_555235ba93100f5774906607ac3a379c)
+        ;
+
+        
+    
+    
+            var poly_line_2482dbf03511710d0d719630a5ef4978 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.28}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_61ba83f4995df6b0aca63b3c09d2e4c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bb3b39dc38444adb300652b2e8c49bc = $(`<div id="html_8bb3b39dc38444adb300652b2e8c49bc" style="width: 100.0%; height: 100.0%;">Step 39: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_61ba83f4995df6b0aca63b3c09d2e4c9.setContent(html_8bb3b39dc38444adb300652b2e8c49bc);
+            
+        
+
+        poly_line_2482dbf03511710d0d719630a5ef4978.bindPopup(popup_61ba83f4995df6b0aca63b3c09d2e4c9)
+        ;
+
+        
+    
+    
+            var poly_line_f38eef88e6a601b9d78e4e39d02aa4fd = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.34}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_15bd51a1544b1d57f8aca29ba90b63d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e59203d09396a8061555d41bcaa7472 = $(`<div id="html_4e59203d09396a8061555d41bcaa7472" style="width: 100.0%; height: 100.0%;">Step 40: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_15bd51a1544b1d57f8aca29ba90b63d5.setContent(html_4e59203d09396a8061555d41bcaa7472);
+            
+        
+
+        poly_line_f38eef88e6a601b9d78e4e39d02aa4fd.bindPopup(popup_15bd51a1544b1d57f8aca29ba90b63d5)
+        ;
+
+        
+    
+    
+            var poly_line_966ed6655736b85034f9724d1b9be5e1 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.4}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_c8a92a6485140a9a1225781570721040 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df906300089e53a3496e561636830b4b = $(`<div id="html_df906300089e53a3496e561636830b4b" style="width: 100.0%; height: 100.0%;">Step 41: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_c8a92a6485140a9a1225781570721040.setContent(html_df906300089e53a3496e561636830b4b);
+            
+        
+
+        poly_line_966ed6655736b85034f9724d1b9be5e1.bindPopup(popup_c8a92a6485140a9a1225781570721040)
+        ;
+
+        
+    
+    
+            var poly_line_cfb610849c041f252a38114cf60968c9 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.46}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_cdadb0b5eff1ac7ebd171568309ff102 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b698ffe5f71f1e6103eae40a0d125796 = $(`<div id="html_b698ffe5f71f1e6103eae40a0d125796" style="width: 100.0%; height: 100.0%;">Step 42: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_cdadb0b5eff1ac7ebd171568309ff102.setContent(html_b698ffe5f71f1e6103eae40a0d125796);
+            
+        
+
+        poly_line_cfb610849c041f252a38114cf60968c9.bindPopup(popup_cdadb0b5eff1ac7ebd171568309ff102)
+        ;
+
+        
+    
+    
+            var poly_line_1c233061960b42156513384c9dd778b3 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.52}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_7ed5207746f4cf9843deaacc42f501ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_baa61b3d28d4bb7db871bf6e5c49c9e7 = $(`<div id="html_baa61b3d28d4bb7db871bf6e5c49c9e7" style="width: 100.0%; height: 100.0%;">Step 43: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_7ed5207746f4cf9843deaacc42f501ae.setContent(html_baa61b3d28d4bb7db871bf6e5c49c9e7);
+            
+        
+
+        poly_line_1c233061960b42156513384c9dd778b3.bindPopup(popup_7ed5207746f4cf9843deaacc42f501ae)
+        ;
+
+        
+    
+    
+            var poly_line_c93166280c9d82e4a765c3470412f39a = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.58}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_db97bd11412e48d7ff693729e0c5c1b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8962cc30e5129ce51829b06cd2a08035 = $(`<div id="html_8962cc30e5129ce51829b06cd2a08035" style="width: 100.0%; height: 100.0%;">Step 44: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_db97bd11412e48d7ff693729e0c5c1b2.setContent(html_8962cc30e5129ce51829b06cd2a08035);
+            
+        
+
+        poly_line_c93166280c9d82e4a765c3470412f39a.bindPopup(popup_db97bd11412e48d7ff693729e0c5c1b2)
+        ;
+
+        
+    
+    
+            var poly_line_7297a80e7bbd42a3481fc8210f634fdf = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.640000000000001}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_e022d3c41c77d0eff7460465f7e5f451 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf95a63d800400a359652d7329271aac = $(`<div id="html_bf95a63d800400a359652d7329271aac" style="width: 100.0%; height: 100.0%;">Step 45: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_e022d3c41c77d0eff7460465f7e5f451.setContent(html_bf95a63d800400a359652d7329271aac);
+            
+        
+
+        poly_line_7297a80e7bbd42a3481fc8210f634fdf.bindPopup(popup_e022d3c41c77d0eff7460465f7e5f451)
+        ;
+
+        
+    
+    
+            var poly_line_85452d4478f8ffc5e0151060a2bdf4c0 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.7}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_fb87913c0cd39fb79658dc7337145733 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6741eab3f345393a8dd1e24d28a32202 = $(`<div id="html_6741eab3f345393a8dd1e24d28a32202" style="width: 100.0%; height: 100.0%;">Step 46: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_fb87913c0cd39fb79658dc7337145733.setContent(html_6741eab3f345393a8dd1e24d28a32202);
+            
+        
+
+        poly_line_85452d4478f8ffc5e0151060a2bdf4c0.bindPopup(popup_fb87913c0cd39fb79658dc7337145733)
+        ;
+
+        
+    
+    
+            var poly_line_cdf273e41e9a68a548cb220134919849 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.76}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_f3920be3eb849582f39937fe8b206f64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6acc10f63dcd1e23661ff1eeefc0409b = $(`<div id="html_6acc10f63dcd1e23661ff1eeefc0409b" style="width: 100.0%; height: 100.0%;">Step 47: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_f3920be3eb849582f39937fe8b206f64.setContent(html_6acc10f63dcd1e23661ff1eeefc0409b);
+            
+        
+
+        poly_line_cdf273e41e9a68a548cb220134919849.bindPopup(popup_f3920be3eb849582f39937fe8b206f64)
+        ;
+
+        
+    
+    
+            var poly_line_14bfca4a2f4b853c68df634f04835ccf = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.82}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_95fd6f678401d2c6f42a93c3d10ab1e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_010ea8cf65a614579a3af7165e28be48 = $(`<div id="html_010ea8cf65a614579a3af7165e28be48" style="width: 100.0%; height: 100.0%;">Step 48: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_95fd6f678401d2c6f42a93c3d10ab1e2.setContent(html_010ea8cf65a614579a3af7165e28be48);
+            
+        
+
+        poly_line_14bfca4a2f4b853c68df634f04835ccf.bindPopup(popup_95fd6f678401d2c6f42a93c3d10ab1e2)
+        ;
+
+        
+    
+    
+            var poly_line_6052e54cb9f335510960b7447bbe6f33 = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.88}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_13fcad09327cae34cd679c41dbaec7ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce7041f797575602c99ac05c4409b911 = $(`<div id="html_ce7041f797575602c99ac05c4409b911" style="width: 100.0%; height: 100.0%;">Step 49: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_13fcad09327cae34cd679c41dbaec7ef.setContent(html_ce7041f797575602c99ac05c4409b911);
+            
+        
+
+        poly_line_6052e54cb9f335510960b7447bbe6f33.bindPopup(popup_13fcad09327cae34cd679c41dbaec7ef)
+        ;
+
+        
+    
+    
+            var poly_line_ca0c3a85b5adceb6e4088d136b48920c = L.polyline(
+                [[-17.9321018, 30.9786271], [-17.9316928, 30.9786484], [-17.9316513, 30.9786404], [-17.9316201, 30.9786176], [-17.9316016, 30.9785854], [-17.9315933, 30.9785438], [-17.9315603, 30.9774681]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.9399999999999995}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+        var popup_f4bc90cbdaf5a0b9ae39142e37753fad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_650edffddbe5de5fe9537a4961167a5c = $(`<div id="html_650edffddbe5de5fe9537a4961167a5c" style="width: 100.0%; height: 100.0%;">Step 50: Reward=1.00, Confidence=0.28</div>`)[0];
+                popup_f4bc90cbdaf5a0b9ae39142e37753fad.setContent(html_650edffddbe5de5fe9537a4961167a5c);
+            
+        
+
+        poly_line_ca0c3a85b5adceb6e4088d136b48920c.bindPopup(popup_f4bc90cbdaf5a0b9ae39142e37753fad)
+        ;
+
+        
+    
+    
+            var marker_2062a56f332b718cecef85c4ee970253 = L.marker(
+                [-17.9321018, 30.9786271],
+                {
+}
+            ).addTo(map_32572971bc5eb38fd4c5694c6e83eb25);
+        
+    
+            var icon_8481581c90569e14c05828dda384866e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc61808d82a932969e83153690074007 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1737e1ece48bd574bf1d08be4633c24 = $(`<div id="html_a1737e1ece48bd574bf1d08be4633c24" style="width: 100.0%; height: 100.0%;">Start - Episode 85</div>`)[0];
+                popup_cc61808d82a932969e83153690074007.setContent(html_a1737e1ece48bd574bf1d08be4633c24);
+            
+        
+
+        marker_2062a56f332b718cecef85c4ee970253.bindPopup(popup_cc61808d82a932969e83153690074007)
+        ;
+
+        
+    
+    
+                marker_2062a56f332b718cecef85c4ee970253.setIcon(icon_8481581c90569e14c05828dda384866e);
+            
+</script>
+</html>

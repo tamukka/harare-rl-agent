@@ -1,3 +1,13 @@
 {
-    "backend.maxHeapSizeMb": 1487
+    "backend.maxHeapSizeMb": 1487,
+    "plugins": [
+        {
+            "type": "add",
+            "pluginName": "com.github.catppuccin.fleet"
+        },
+        {
+            "type": "add",
+            "pluginName": "com.mallowigi.material.fleet"
+        }
+    ]
 }
